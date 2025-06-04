@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>글 작성</title>
+</head>
+<body>
+<h1>✏ 게시글 작성</h1>
+
+<form action="/new" method="post">
+    <label>제목: <input type="text" name="title" required/></label><br><br>
+    <label>작성자: <input type="text" name="name" required/></label><br><br>
+    <label>비밀번호: <input type="text" name="password" required/></label><br><br>
+    <label>내용: <br><textarea name="content" rows="5" cols="40" required></textarea></label><br><br>
+    <button type="submit">저장</button>
+</form>
+
+<a href="/">← 돌아가기</a>
+</body>
+</html>
