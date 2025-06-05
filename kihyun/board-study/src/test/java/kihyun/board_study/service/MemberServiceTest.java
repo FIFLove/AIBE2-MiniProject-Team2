@@ -57,4 +57,17 @@ class MemberServiceTest {
         Assertions.assertThat(e.getMessage()).isEqualTo("이미 존재하는 회원입니다.");
     }
 
+    @Test void 회원_이름_찾기() throws Exception {
+
+        // given
+        Member member = new Member();
+        member.setName("member");
+        memberService.join(member);
+
+        // when
+        Member findMember = memberService.findOne("member").get();
+
+        // then
+        assertEquals("member", findMember.getName());
+    }
 }

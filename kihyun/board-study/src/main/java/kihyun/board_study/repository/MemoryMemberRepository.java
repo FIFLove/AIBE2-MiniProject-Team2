@@ -1,6 +1,7 @@
 package kihyun.board_study.repository;
 
 import kihyun.board_study.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 

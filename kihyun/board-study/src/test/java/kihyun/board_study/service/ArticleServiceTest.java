@@ -49,7 +49,7 @@ class ArticleServiceTest {
         Article article = new Article();
         article.setTitle("Title");
         article.setContent("Content");
-        article.setMemberId(member.getId());
+        article.setMemberId(memberService.findOne("member").get().getId());
         articleService.createArticle(article, "password");
 
         // then

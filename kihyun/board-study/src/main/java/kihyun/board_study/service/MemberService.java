@@ -3,6 +3,7 @@ package kihyun.board_study.service;
 import kihyun.board_study.domain.Member;
 import kihyun.board_study.repository.MemberRepository;
 import kihyun.board_study.repository.MemoryMemberRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
@@ -44,6 +45,7 @@ public class MemberService {
     }
 
     public Optional<Member> findOne(String name) {
+        System.out.println("[DEBUG] findOne(name) 호출됨. name = " + name);
         return memberRepository.findByName(name);
     }
 

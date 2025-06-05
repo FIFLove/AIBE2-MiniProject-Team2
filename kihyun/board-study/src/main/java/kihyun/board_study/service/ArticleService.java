@@ -2,6 +2,7 @@ package kihyun.board_study.service;
 
 import kihyun.board_study.domain.Article;
 import kihyun.board_study.repository.ArticleRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
